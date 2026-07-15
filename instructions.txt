@@ -1,0 +1,31 @@
+Student Management System - Streamlit Web App
+
+This is a simple Streamlit-based web application to manage student records.
+
+=== HOW TO RUN LOCALLY ===
+
+1. Ensure you have Python installed on your computer.
+2. Open your terminal or command prompt and navigate to this folder.
+3. Install the required dependencies by running:
+   pip install -r requirements.txt
+4. Run the Streamlit application by running:
+   streamlit run app.py
+5. The application should automatically open in your default web browser (usually at http://localhost:8501).
+
+=== HOW TO DEPLOY ON STREAMLIT COMMUNITY CLOUD ===
+
+Streamlit provides a free service to host your apps called Streamlit Community Cloud.
+
+1. Push your code to GitHub:
+   - Create a free account on GitHub (https://github.com/).
+   - Create a new public repository and upload `app.py` and `requirements.txt` to it. (Note: You do not necessarily need to upload `students.txt`, it will be created automatically).
+
+2. Deploy the app:
+   - Go to Streamlit Community Cloud (https://share.streamlit.io/) and sign in with your GitHub account.
+   - Click on the "New app" button.
+   - Select the GitHub repository you just created, set the branch to `main` (or `master`), and set the main file path to `app.py`.
+   - Click "Deploy!".
+
+3. Your app is live!
+   - Once deployed, Streamlit will give you a public URL that you can share with anyone.
+   - Note: Because the app writes to a local `students.txt` file, data added on the cloud version will be saved in the temporary cloud environment. If the app goes to sleep and wakes up, the data might reset. For a production app, you would eventually switch to a real database (like SQLite, PostgreSQL, or Google Sheets), but this works perfectly for learning and demonstration!
